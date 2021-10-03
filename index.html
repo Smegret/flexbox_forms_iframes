@@ -7,27 +7,43 @@
   <link rel="stylesheet" href="https://use.typekit.net/mej7wpz.css">
 </head>
 
-<body>
 <header><h1>Flexbox, Forms, Fonts and iFrames</h1></header>
 <nav>  </nav>
 
   <div id="main_container">
     <div class="flex-container">
 
-    <div class="article" style="flex-grow: 0; background-color:white">
+    <div class="article" style="flex-grow: 0">
         <iframe width="530" height="300" src="https://www.youtube.com/embed/6OFHXmiZP38" title="YouTube video player"
     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe></div>
 
-    <div class="article" style="flex-grow: 1; background-color:skyblue"><p>
-      Summis velit quae elit cillum eram enim noster irure malis enim tempor culpa.<br>
-      Quorum magna ipsum culpa velit illum. Minim minim magna<br> noster veniam velit legam
-      nisi esse tamen. Cillum sint velit noster eram anim<br> enim anim irure nulla cillum.
-    </p>
+    <div class="article" style="flex-grow: 2; background-color:skyblue">
+      <br>Lorem Ipsom<p>Summis velit quae elit cillum eram enim noster irure malis enim tempor culpa.
+      Quorum magna ipsum culpa velit illum. Minim minim magna.<br><br> Noster veniam velit legam
+      nisi esse tamen. Cillum sint velit noster eram anim enim anim irure nulla cillum.</p>
       </div>
 
-    <div class="article article_right" style="flex-grow: 1; background-color:aqua">
-      
+    <div class="article article_right" style="flex-grow: 2; background-color:aqua">
+      <h2>Do you like the rain?</h2>
+      <div>
+        <form action="">
+          <label for="yes">Yes</label>
+            <input type="radio" id="Yes" name="rain" ><br>
+            <label for="No">No</label>
+              <input type="radio" id="No" name="rain" >
+          </div>
+      <div>
+        <h2>Favorite activity to do when it's raining?</h2>
+        <input type="checkbox" id="activity1" name="activity1" value="Sleep">
+          <label for="activity1"> Sleep</label><br>
+          <input type="checkbox" id="activity2" name="activity2" value="Read">
+          <label for="activity2"> Read</label><br>
+          <input type="checkbox" id="activity3" name="activity3" value="Watch TV">
+          <label for="activity3"> Watch TV</label>
+        </div>
+      </form>
+
             <div class="column1">  </div>
             <div class="column2">  </div>
             <div class="column3">  </div>
@@ -37,7 +53,7 @@
 <p><b><u>REGISTER</u></p>
 <form action="">
   <label for="first">First Name:</label><br>
-    <input type="text" id="first"><br>
+    <input type="text" id="first" required><br>
   <label for="last">Last Name: </label><br>
     <input type="text" id="last"><br>
   <label for="phone">Phone Number: </label><br>
@@ -46,6 +62,6 @@
 </form>
 </div>
 <footer>Created by S. Megret &#9829; 2021</footer>
-
+}
 </body>
 </html>
